@@ -1,0 +1,27 @@
+[tool.flake8]
+max-line-length = 88
+
+[tool.poetry]
+name = "gopass-export"
+version = "0.1.0"
+description = ""
+authors = ["Maurício Dias <mau.dias@gmail.com>"]
+readme = "README.md"
+packages = [{include = "gopass_export"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+PGPy = "^0.5.4"
+cryptography = "<38"
+1password = "^0.6.1"
+black = "^22.10.0"
+mypy = "^0.982"
+isort = "^5.10.1"
+flake8-docstrings = "^1.6.0"
+pyproject-flake8 = "^5.0.4.post1"
+click = "^8.1.3"
+ipdb = "^0.13.9"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
